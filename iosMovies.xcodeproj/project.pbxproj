@@ -16,6 +16,8 @@
 		9544B34B2898E09900822C10 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544B34A2898E09900822C10 /* HomeRouter.swift */; };
 		9544B34F2898E93800822C10 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9544B34E2898E93800822C10 /* HomeViewModel.swift */; };
 		956ACA8B289AA70C00C91FC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956ACA8A289AA70C00C91FC3 /* Constants.swift */; };
+		95F9CED2289E0D3300BA0B8E /* ManagerConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9CED1289E0D3300BA0B8E /* ManagerConnections.swift */; };
+		95F9CED4289E105600BA0B8E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9CED3289E105600BA0B8E /* MovieModel.swift */; };
 		F9FCCECE08BC141D6D83A809 /* Pods_iosMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0828BCA5A181C6307A2214 /* Pods_iosMovies.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		9544B34A2898E09900822C10 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		9544B34E2898E93800822C10 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		956ACA8A289AA70C00C91FC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95F9CED1289E0D3300BA0B8E /* ManagerConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerConnections.swift; sourceTree = "<group>"; };
+		95F9CED3289E105600BA0B8E /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		D8F5EA27405E10D7C505BC56 /* Pods-iosMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosMovies.release.xcconfig"; path = "Target Support Files/Pods-iosMovies/Pods-iosMovies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +58,6 @@
 				5AA0BBD1ADB618A0A10DEE3F /* Pods-iosMovies.debug.xcconfig */,
 				D8F5EA27405E10D7C505BC56 /* Pods-iosMovies.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +95,7 @@
 				9544B3422898DB9900822C10 /* Home */,
 				9544B3432898DBA400822C10 /* DetailView */,
 				956ACA89289AA6BA00C91FC3 /* Resources */,
+				95F9CED0289E0CCA00BA0B8E /* NetworkManager */,
 				9544B33728989B5200822C10 /* Assets.xcassets */,
 				9544B33928989B5200822C10 /* LaunchScreen.storyboard */,
 				9544B33C28989B5200822C10 /* Info.plist */,
@@ -145,6 +149,7 @@
 		9544B34D2898E8C500822C10 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				95F9CED3289E105600BA0B8E /* MovieModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +160,14 @@
 				956ACA8A289AA70C00C91FC3 /* Constants.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		95F9CED0289E0CCA00BA0B8E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				95F9CED1289E0D3300BA0B8E /* ManagerConnections.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,8 @@
 				9544B3462898DE2000822C10 /* HomeView.swift in Sources */,
 				9544B34B2898E09900822C10 /* HomeRouter.swift in Sources */,
 				9544B32F28989B5000822C10 /* AppDelegate.swift in Sources */,
+				95F9CED2289E0D3300BA0B8E /* ManagerConnections.swift in Sources */,
+				95F9CED4289E105600BA0B8E /* MovieModel.swift in Sources */,
 				9544B34F2898E93800822C10 /* HomeViewModel.swift in Sources */,
 				9544B33128989B5000822C10 /* SceneDelegate.swift in Sources */,
 				956ACA8B289AA70C00C91FC3 /* Constants.swift in Sources */,
