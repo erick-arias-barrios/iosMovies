@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="iosMovies" customModuleProvider="target">
             <connections>
+                <outlet property="activity" destination="Q1O-s1-DjS" id="61b-tF-aLR"/>
+                <outlet property="tableView" destination="PWR-OU-ADx" id="RyI-sD-J4q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,22 +20,38 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movies App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO2-ok-uvK">
-                    <rect key="frame" x="130" y="72" width="138" height="33"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PWR-OU-ADx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Q1O-s1-DjS">
+                    <rect key="frame" x="188.5" y="276" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="5Ta-1h-hes"/>
+                        <constraint firstAttribute="width" constant="37" id="tZU-Nq-IGB"/>
+                    </constraints>
+                    <color key="color" systemColor="systemPurpleColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="87"/>
+            <constraints>
+                <constraint firstItem="Q1O-s1-DjS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="232" id="1rc-vB-cxf"/>
+                <constraint firstItem="Q1O-s1-DjS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H0T-t0-0OZ"/>
+                <constraint firstAttribute="bottom" secondItem="PWR-OU-ADx" secondAttribute="bottom" id="Lab-0J-5qz"/>
+                <constraint firstItem="PWR-OU-ADx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g0w-UQ-ysV"/>
+                <constraint firstItem="PWR-OU-ADx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ozQ-O5-nuN"/>
+                <constraint firstItem="PWR-OU-ADx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vEs-Zw-hzf"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="86.383928571428569"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
